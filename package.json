@@ -1,0 +1,19 @@
+{
+  "name": "gbs-aen-expressjs-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JannikLindemeier/gbs-aen-expressjs-starter.git"
+  },
+  "author": "Jannik Lindemeier",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JannikLindemeier/gbs-aen-expressjs-starter/issues"
+  },
+  "homepage": "https://github.com/JannikLindemeier/gbs-aen-expressjs-starter#readme"
+}

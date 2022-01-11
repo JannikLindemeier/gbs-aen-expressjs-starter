@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JannikLindemeier/gbs-aen-expressjs-starter/issues"
   },
-  "homepage": "https://github.com/JannikLindemeier/gbs-aen-expressjs-starter#readme"
+  "homepage": "https://github.com/JannikLindemeier/gbs-aen-expressjs-starter#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }

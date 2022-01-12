@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/app.js",
+  "type": "module",
   "scripts": {
-    "devStart": "nodemon src/app.js"
+    "devStart": "nodemon --ignore persistent.json src/app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "uuid": "^8.3.2",
     "express": "^4.17.2"
   }
 }

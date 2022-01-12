@@ -5,7 +5,7 @@
   "main": "src/app.js",
   "type": "module",
   "scripts": {
-    "devStart": "nodemon src/app.js"
+    "devStart": "nodemon --ignore persistent.json src/app.js"
   },
   "repository": {
     "type": "git",

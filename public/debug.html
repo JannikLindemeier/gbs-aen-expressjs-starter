@@ -30,11 +30,10 @@
             http.setRequestHeader("Content-Type", "application/json");
             http.onreadystatechange = function() {
                 if(http.readyState == 4) {
-                    if(http.status==200) {
-                        document.commandform.response.value="Bad JSON: "+http.responseText;
-                        document.commandform.response.value=JSON.stringify(JSON.parse(http.responseText), null, '\t');
-                    } else {
-                        document.commandform.response.value="Error "+http.status;
+                    document.commandform.response.value="Bad JSON: "+http.responseText;
+                    document.commandform.response.value=JSON.stringify(JSON.parse(http.responseText), null, '\t');
+                    if(!String(http.status).startsWith("2")) {
+                        alert("Error "+http.status)
                     }
                 }
             }

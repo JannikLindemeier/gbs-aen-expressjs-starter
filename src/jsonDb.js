@@ -24,17 +24,17 @@ function create(data){
 function update(id, changes){
     //update a value by id - insert changes
     const entries = read()
-    const entry = entries.find(e => e.id === id)
+    let entry = entries.find(e => e.id === id)
     if(!entry){
         return null
     }
-
+    const index = entries.indexOf(entry)
     //update in entries
-    entries[entries.indexOf(entry)] = {...entry, ...changes, id} //id shall be readonly
+    entries[index] = {...entry, ...changes, id} //id shall be readonly
 
     //save and return
     writeFileSync(FILE, JSON.stringify(entries))
-    return entry
+    return entries[index]
 }
 
 function remove(id){
